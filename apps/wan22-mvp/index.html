@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WAN22 OS MVP</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>WAN22 OS</h1>
+    <p class="app-subtitle">Contract &rarr; Costs &rarr; Project &rarr; Task &rarr; Approval</p>
+  </header>
+
+  <nav class="app-nav">
+    <button data-view="contracts" class="nav-item active">Contracts</button>
+    <button data-view="documents" class="nav-item">Documents</button>
+    <button data-view="costs" class="nav-item">Costs</button>
+    <button data-view="projects" class="nav-item">Projects</button>
+    <button data-view="tasks" class="nav-item">Tasks</button>
+    <button data-view="approvals" class="nav-item">Approvals</button>
+    <button data-view="control-panel" class="nav-item">Control Panel</button>
+  </nav>
+
+  <main id="app-view" class="app-view">
+    <p>Loading WAN22 OS state&hellip;</p>
+  </main>
+
+  <footer class="app-footer">
+    <span id="sync-status">Not connected</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
