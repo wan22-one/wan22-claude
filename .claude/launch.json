@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "WAN22 OS MVP",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["apps/wan22-mvp/server.js"],
+      "port": 4180
+    }
+  ]
+}

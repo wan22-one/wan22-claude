@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const HOST = '127.0.0.1';
-const PORT = 4180;
+const PORT = process.env.PORT || 4180;
 
 const ROOT_DIR = __dirname;
 const STATE_FILE = path.join(ROOT_DIR, 'data', 'state.json');
