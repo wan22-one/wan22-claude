@@ -1,0 +1,238 @@
+{
+  "contracts": [
+    {
+      "id": "contract_1",
+      "name": "Website Redesign Project",
+      "clientName": "ABC Company Ltd.",
+      "status": "active",
+      "value": 450000,
+      "billingCycle": "monthly",
+      "startDate": "2024-01-15",
+      "endDate": "2024-12-31",
+      "description": "ออกแบบและพัฒนาเว็บไซต์ใหม่พร้อมระบบการจัดการเนื้อหา",
+      "services": [
+        { "name": "Web Design", "description": "ออกแบบหน้าตาเว็บไซต์" },
+        { "name": "Frontend Development", "description": "พัฒนาส่วนติดต่อผู้ใช้งาน" },
+        { "name": "Backend Development", "description": "พัฒนาระบบหลังบ้านและ API" },
+        { "name": "QA Testing", "description": "ทดสอบคุณภาพระบบ" }
+      ],
+      "projects": [
+        "proj_1",
+        "proj_2"
+      ],
+      "parentContractId": null,
+      "childContractIds": [],
+      "createdAt": "2024-01-15T10:00:00.000Z",
+      "updatedAt": "2024-01-15T10:00:00.000Z"
+    },
+    {
+      "id": "contract_2",
+      "name": "Mobile App Development",
+      "clientName": "XYZ Startup Inc.",
+      "status": "draft",
+      "value": 850000,
+      "billingCycle": "quarterly",
+      "startDate": "2024-02-01",
+      "endDate": "2024-11-30",
+      "description": "พัฒนาแอปพลิเคชันมือถือสำหรับ iOS และ Android พร้อมระบบ backend",
+      "services": [
+        { "name": "UI/UX Design", "description": "ออกแบบประสบการณ์และหน้าตาแอป" },
+        { "name": "iOS Development", "description": "พัฒนาแอปพลิเคชันสำหรับ iOS" },
+        { "name": "Android Development", "description": "พัฒนาแอปพลิเคชันสำหรับ Android" },
+        { "name": "API Development", "description": "พัฒนาระบบ backend และ API" }
+      ],
+      "projects": [
+        "proj_3",
+        "proj_4"
+      ],
+      "parentContractId": null,
+      "childContractIds": [],
+      "createdAt": "2024-02-01T09:30:00.000Z",
+      "updatedAt": "2024-02-01T09:30:00.000Z"
+    },
+    {
+      "id": "contract_3",
+      "name": "Maintenance & Support Contract",
+      "clientName": "Global Tech Solutions",
+      "status": "active",
+      "value": 180000,
+      "billingCycle": "yearly",
+      "startDate": "2024-01-01",
+      "endDate": "2024-12-31",
+      "description": "บริการดูแลรักษาและสนับสนุนระบบประจำปี",
+      "services": [
+        { "name": "24/7 Support", "description": "สนับสนุนตลอด 24 ชั่วโมง" },
+        { "name": "Bug Fixes", "description": "แก้ไขข้อบกพร่องของระบบ" },
+        { "name": "Performance Optimization", "description": "ปรับปรุงประสิทธิภาพระบบ" }
+      ],
+      "projects": [],
+      "parentContractId": null,
+      "childContractIds": [],
+      "createdAt": "2024-01-01T08:00:00.000Z",
+      "updatedAt": "2024-01-01T08:00:00.000Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_1",
+      "name": "Homepage Redesign",
+      "contractId": "contract_1",
+      "description": "ออกแบบและปรับปรุงหน้าแรกเว็บไซต์",
+      "completed": 60,
+      "tasks": 15,
+      "completedTasks": 9,
+      "startDate": "2024-01-15",
+      "dueDate": "2024-03-15",
+      "status": "in-progress"
+    },
+    {
+      "id": "proj_2",
+      "name": "E-commerce System Development",
+      "contractId": "contract_1",
+      "description": "พัฒนาระบบร้านค้าออนไลน์ที่สมบูรณ์",
+      "completed": 40,
+      "tasks": 25,
+      "completedTasks": 10,
+      "startDate": "2024-02-01",
+      "dueDate": "2024-06-30",
+      "status": "in-progress"
+    },
+    {
+      "id": "proj_3",
+      "name": "Mobile App UI/UX Design",
+      "contractId": "contract_2",
+      "description": "ออกแบบ UI/UX สำหรับแอปพลิเคชันมือถือ",
+      "completed": 85,
+      "tasks": 12,
+      "completedTasks": 10,
+      "startDate": "2024-02-01",
+      "dueDate": "2024-03-30",
+      "status": "in-progress"
+    },
+    {
+      "id": "proj_4",
+      "name": "iOS App Development",
+      "contractId": "contract_2",
+      "description": "พัฒนาแอปพลิเคชัน iOS",
+      "completed": 35,
+      "tasks": 20,
+      "completedTasks": 7,
+      "startDate": "2024-03-01",
+      "dueDate": "2024-08-31",
+      "status": "in-progress"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_1",
+      "projectId": "proj_1",
+      "contractId": "contract_1",
+      "title": "Create wireframes",
+      "description": "สร้าง wireframe สำหรับหน้าแรก",
+      "status": "completed",
+      "assigneeId": "person_1",
+      "startDate": "2024-01-16",
+      "dueDate": "2024-01-25",
+      "priority": "high"
+    },
+    {
+      "id": "task_2",
+      "projectId": "proj_1",
+      "contractId": "contract_1",
+      "title": "Design visual mockup",
+      "description": "ออกแบบ mockup ด้วยสี typography ที่เหมาะสม",
+      "status": "in-progress",
+      "assigneeId": "person_2",
+      "startDate": "2024-01-26",
+      "dueDate": "2024-02-05",
+      "priority": "high"
+    }
+  ],
+  "people": [
+    {
+      "id": "person_1",
+      "name": "John Designer",
+      "roles": [
+        {
+          "id": "role_1",
+          "position": "Senior UI/UX Designer",
+          "responsibility": "ออกแบบ wireframe และโครงสร้างหน้าจอ",
+          "rateType": "monthly",
+          "rateValue": 45000
+        }
+      ],
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "person_2",
+      "name": "Sarah UI Designer",
+      "roles": [
+        {
+          "id": "role_2",
+          "position": "UI Designer (Freelance)",
+          "responsibility": "ออกแบบ visual mockup และ design system",
+          "rateType": "daily",
+          "rateValue": 2500
+        }
+      ],
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "costs": [
+    {
+      "id": "cost_1",
+      "name": "ค่าจ้างนักออกแบบ UI",
+      "taskId": "task_1",
+      "projectId": "proj_1",
+      "contractId": "contract_1",
+      "type": "labor",
+      "amount": 25000,
+      "date": "2024-01-20",
+      "note": "ค่าจ้างเดือนแรก",
+      "createdAt": "2024-01-20T10:00:00.000Z",
+      "updatedAt": "2024-01-20T10:00:00.000Z"
+    },
+    {
+      "id": "cost_2",
+      "name": "ค่า Hosting Server",
+      "taskId": null,
+      "projectId": null,
+      "contractId": null,
+      "type": "operational",
+      "amount": 3500,
+      "date": "2024-02-01",
+      "note": "ค่าเซิร์ฟเวอร์รายเดือน (pool กลาง ยังไม่ผูกกับงานเฉพาะ)",
+      "createdAt": "2024-02-01T10:00:00.000Z",
+      "updatedAt": "2024-02-01T10:00:00.000Z"
+    },
+    {
+      "id": "cost_3",
+      "name": "ค่าใบอนุญาต Software",
+      "taskId": null,
+      "projectId": null,
+      "contractId": null,
+      "type": "software",
+      "amount": 8900,
+      "date": "2024-02-05",
+      "note": "License สำหรับเครื่องมือพัฒนา (pool กลาง ยังไม่ผูกกับงานเฉพาะ)",
+      "createdAt": "2024-02-05T10:00:00.000Z",
+      "updatedAt": "2024-02-05T10:00:00.000Z"
+    }
+  ],
+  "billingCycles": [
+    { "value": "monthly", "label": "รายเดือน" },
+    { "value": "quarterly", "label": "รายไตรมาส" },
+    { "value": "yearly", "label": "รายปี" },
+    { "value": "one-time", "label": "ครั้งเดียว" }
+  ],
+  "costTypes": [
+    { "value": "labor", "label": "ค่าแรง/ค่าจ้าง" },
+    { "value": "software", "label": "ซอฟต์แวร์/License" },
+    { "value": "operational", "label": "ค่าดำเนินการ" },
+    { "value": "material", "label": "วัสดุ/อุปกรณ์" },
+    { "value": "other", "label": "อื่นๆ" }
+  ],
+  "currentView": "contracts"
+}

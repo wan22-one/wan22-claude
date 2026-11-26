@@ -1,35 +1,58 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="th">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WAN22 OS MVP</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAN22 OS - Contract Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="app-header">
-    <h1>WAN22 OS</h1>
-    <p class="app-subtitle">Contract &rarr; Costs &rarr; Project &rarr; Task &rarr; Approval</p>
-  </header>
+  <div class="app-container">
+    <!-- Header/Navigation -->
+    <header class="app-header">
+      <div class="header-bar">
+        <div class="header-logo">
+          <h1>WAN22<span class="logo-mark">・</span>OS</h1>
+          <p class="subtitle">สัญญา — ต้นทุน — โปรเจค — งาน — อนุมัติ</p>
+        </div>
+        <div class="header-seal" aria-hidden="true">22</div>
+      </div>
+      <nav class="app-nav">
+        <button class="nav-btn active" data-view="contracts">
+          <span class="nav-btn-icon">📋</span> สัญญา
+        </button>
+        <button class="nav-btn" data-view="projects">
+          <span class="nav-btn-icon">📦</span> โปรเจค
+        </button>
+        <button class="nav-btn" data-view="tasks">
+          <span class="nav-btn-icon">✓</span> งาน
+        </button>
+        <button class="nav-btn" data-view="costs">
+          <span class="nav-btn-icon">💰</span> ต้นทุน
+        </button>
+        <button class="nav-btn" data-view="people">
+          <span class="nav-btn-icon">👤</span> บุคคล
+        </button>
+      </nav>
+    </header>
 
-  <nav class="app-nav">
-    <button data-view="contracts" class="nav-item active">Contracts</button>
-    <button data-view="documents" class="nav-item">Documents</button>
-    <button data-view="costs" class="nav-item">Costs</button>
-    <button data-view="projects" class="nav-item">Projects</button>
-    <button data-view="tasks" class="nav-item">Tasks</button>
-    <button data-view="approvals" class="nav-item">Approvals</button>
-    <button data-view="control-panel" class="nav-item">Control Panel</button>
-  </nav>
+    <!-- Main Content Area -->
+    <main class="app-main">
+      <div id="app-content">
+        <!-- Dynamic content renders here -->
+      </div>
+    </main>
 
-  <main id="app-view" class="app-view">
-    <p>Loading WAN22 OS state&hellip;</p>
-  </main>
+    <!-- Dialogs Container -->
+    <div id="dialogs">
+      <!-- Dialogs render here -->
+    </div>
+  </div>
 
-  <footer class="app-footer">
-    <span id="sync-status">Not connected</span>
-  </footer>
-
-  <script src="main.js"></script>
+  <!-- Scripts -->
+  <script src="app.js"></script>
 </body>
 </html>

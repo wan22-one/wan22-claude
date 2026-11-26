@@ -1,0 +1,25 @@
+{
+  "name": "wan22-os-contract-module",
+  "version": "0.1.0",
+  "description": "WAN22 OS - Contract Module MVP",
+  "main": "app.js",
+  "scripts": {
+    "start": "python3 server.py",
+    "start:mvp": "python3 server.py",
+    "test": "node test.js",
+    "validate": "node test.js"
+  },
+  "keywords": [
+    "contracts",
+    "wan22",
+    "mvp",
+    "business",
+    "management"
+  ],
+  "author": "WAN22",
+  "license": "PRIVATE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wan22/wan22-os.git"
+  }
+}

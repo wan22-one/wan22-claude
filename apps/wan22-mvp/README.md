@@ -4,18 +4,21 @@ This is the local, browser-based MVP described in the root [README](../../README
 
 ## Structure
 
-- `index.html` / `main.js` / `styles.css` — the app shell and views.
-- `server.js` — local Node server (no external dependencies) that serves the app and exposes `GET/POST /api/state` for shared state, backed by `data/state.json`.
-- `data/state.json` — shared state file used when running via `npm run start:mvp`. Kept as a sanitized template; do not commit real company data here.
-- `scripts/check-syntax.js` — used by `npm test` to syntax-check all MVP JavaScript.
+- `index.html` / `app.js` / `styles.css` — the app shell, views (contracts, projects, tasks, costs, people) and styling.
+- `quotation.html` — standalone printable quotation page.
+- `server.py` — local Python server (default, no dependencies) that serves the app and exposes `GET/POST /api/state`, backed by `data/state.json`. On first run it seeds `data/state.json` from `state.json` if the data file is missing.
+- `server.js` — equivalent Node server with the same `/api/state` API.
+- `state.json` — sanitized seed/demo state.
+- `data/state.json` — the live shared state file written by the server. Do not commit real company data here.
+- `test.js` — `npm test`: checks files exist, state JSON shape, and that the main app modules are wired.
 
 ## Run
 
 ```bash
-npm run start:mvp
+npm start
 ```
 
-Then open `http://127.0.0.1:4180/`.
+Or with Node: `node server.js`. Both honour the `PORT` env var (default 4180). Then open `http://127.0.0.1:4180/`.
 
 ## Standalone Preview
 

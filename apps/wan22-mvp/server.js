@@ -22,7 +22,8 @@ function sendJson(res, statusCode, payload) {
 }
 
 function serveStatic(req, res) {
-  const requestPath = req.url === '/' ? '/index.html' : req.url;
+  const urlPath = req.url.split('?')[0].split('#')[0];
+  const requestPath = urlPath === '/' ? '/index.html' : urlPath;
   const filePath = path.join(ROOT_DIR, path.normalize(requestPath).replace(/^(\.\.[/\\])+/, ''));
 
   fs.readFile(filePath, (err, data) => {
