@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "WAN22 OS MVP (Node)",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["apps/wan22-mvp/server.js"],
+      "port": 4180,
+      "autoPort": true
+    },
+    {
+      "name": "WAN22 OS MVP (Python)",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["apps/wan22-mvp/server.py"],
+      "port": 4180,
+      "autoPort": true
+    }
+  ]
+}

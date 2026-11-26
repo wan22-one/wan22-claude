@@ -1,0 +1,10 @@
+{
+  "name": "wan22-os",
+  "version": "0.1.0",
+  "private": true,
+  "description": "WAN22 OS - internal agency operating system MVP (Contract -> Costs -> Project -> Task -> Approval)",
+  "scripts": {
+    "start:mvp": "node apps/wan22-mvp/server.js",
+    "test": "node apps/wan22-mvp/scripts/check-syntax.js"
+  }
+}
